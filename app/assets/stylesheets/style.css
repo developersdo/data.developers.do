@@ -1,0 +1,24 @@
+.main_data{
+    line-height: .75;
+    color: #353535;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: .75;
+}
+.main_title{
+    line-height: .75;
+    color: #cecece;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: .75;
+}
+.faq_q{
+    font-size: 14px;
+    font-weight: bold;
+}
