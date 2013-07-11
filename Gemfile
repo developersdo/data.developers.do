@@ -43,3 +43,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass'
+gem 'figaro'
+gem 'pg'
+gem 'protected_attributes'
+gem 'simple_form', '~> 3.0.0.rc'
+gem 'thin'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'quiet_assets'
+end
+
