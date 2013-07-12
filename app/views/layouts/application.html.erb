@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= favicon_link_tag 'favicon.ico' %>
+
     <title><%= content_for?(:title) ? yield(:title) : "data.developers.do" %></title>
+    <meta name="author" content="Hector Minaya">
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "data.developers.do" %>">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application", :media => "all" %>
