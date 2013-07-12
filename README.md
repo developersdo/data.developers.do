@@ -1,18 +1,18 @@
 #data.developers.do
 
-###Que estamos haciendo?
+###¿Qué estamos haciendo?
 Estamos creando un repositorio centralizado desde donde se pueden acceder a los datos comunes que los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.
 
-###Que tipo de data tendrán?
+###¿Qué tipo de data tendrán?
 Algunos ejemplos:
 * Provincias, municipios, sectores
 * RNCs - desde el archivo de la DGII
-* Codigos postales
+* Códigos postales
 
-###Que tipo de data NO tendrán?
+###¿Qué tipo de data NO tendrán?
 No manejaremos data de caracter confidencial.
 
-###Quienes somos?
+###¿Quiénes somos?
 Las personas que hasta el momento han contribuido al proyecto son:
 * @HectorMinaya - organizador/contribuyente
 * @amhedH - organizador/contribuyente
@@ -20,7 +20,7 @@ Las personas que hasta el momento han contribuido al proyecto son:
 * @JGTaveras - contribuyente
 * jhonatas - contribuyente
 
-###Como puedo ayudar?
+###¿Cómo puedo ayudar?
 En esta primera etapa solo estamos recibiendo aportes monetarios para ser usados en:
 * Pago del Hosting
 * Pizza, redbull
@@ -30,12 +30,12 @@ Para realizar su aporte pude comunicarse via twitter con @DevelopersDO o directa
 
 ###En una segunda etapa estaremos ampliando y podrán contribuir:
 * Nuevos API
-* Codigo fuente
+* Código fuente
 * Ejemplos de como consumir los API
 * Documentación
 
-###Porque debo ayudar?
-Sencillo, esto es un esfuerzo conjunto de todos, aqui nadie esta haciendo esto para ganar dinero, mientras mas personas aporten mas lejos podemos llegar.
+###¿Por qué debo ayudar?
+Sencillo, esto es un esfuerzo conjunto de todos, aquí nadie esta haciendo esto para ganar dinero, mientras más personas aporten más lejos podemos llegar.
 
-###Cuando estara lista la primera etapa?
-Pronto.....
+###¿Cuándo estará lista la primera etapa?
+Pronto...
