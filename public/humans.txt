@@ -3,10 +3,7 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Hector Minaya
 
 /* THANKS */
   Daniel Kehoe (@rails_apps) for the RailsApps project
