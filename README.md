@@ -35,7 +35,7 @@ Para realizar su aporte pude comunicarse via twitter con @DevelopersDO o directa
 * Documentación
 
 ###¿Por qué debo ayudar?
-Sencillo, esto es un esfuerzo conjunto de todos, aqui nadie esta haciendo esto para ganar dinero, mientras mas personas aporten mas lejos podemos llegar.
+Sencillo, esto es un esfuerzo conjunto de todos, aquí nadie esta haciendo esto para ganar dinero, mientras más personas aporten más lejos podemos llegar.
 
-###¿Cuándo estara lista la primera etapa?
+###¿Cuándo estará lista la primera etapa?
 Pronto...
