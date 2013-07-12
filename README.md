@@ -19,6 +19,7 @@ Las personas que hasta el momento han contribuido al proyecto son:
 * @rene_olivo - organizador/contribuyente
 * @JGTaveras - contribuyente
 * jhonatas - contribuyente
+* @scairon - contribuyente
 
 ###¿Cómo puedo ayudar?
 En esta primera etapa solo estamos recibiendo aportes monetarios para ser usados en:
