@@ -21,7 +21,7 @@ Las personas que hasta el momento han contribuido al proyecto son:
 * @jhonatasrod - contribuyente
 * @scairon - contribuyente
 * @ClaudioASanchez - contribuyente
-* @@popxix - contribuyente
+* @popxix - contribuyente
 
 ###¿Cómo puedo ayudar?
 En esta primera etapa solo estamos recibiendo aportes monetarios para ser usados en:
