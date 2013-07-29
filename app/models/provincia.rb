@@ -1,5 +1,5 @@
 class Provincia < ActiveRecord::Base
-
+	attr_accessible :nombre
 	#def self.to_csv(options = {})
 	#	CSV.generate(options) do |csv|
 	#		csv << column_names

@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   gem 'sdoc', require: false
 end
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
 gem 'figaro'
 gem 'pg'
 gem 'protected_attributes'

@@ -32,8 +32,6 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (2.3.2.0)
-      sass (~> 3.2)
     builder (3.1.4)
     coderay (1.0.9)
     coffee-rails (4.0.0)
@@ -143,7 +141,6 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass
   coffee-rails (~> 4.0.0)
   debugger
   figaro

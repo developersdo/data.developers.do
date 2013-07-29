@@ -1,3 +1,7 @@
+.body{
+    padding-top: 20px; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .main_data{
     line-height: .75;
     color: #353535;
@@ -17,6 +21,14 @@
     font-variant: normal;
     font-weight: 100;
     line-height: .75;
+}
+.service{
+    font-size: 18px;
+    font-weight: bold;
+}
+.center_btn{
+    vertical-align: middle;
+    text-align: center;
 }
 .faq_q{
     font-size: 14px;
