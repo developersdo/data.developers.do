@@ -18,26 +18,18 @@
   </div>
   <table class="table table-striped">
   <tbody>
+    <%@servicios.each do |servicio| %>
     <tr>
-      <td><span class="service">Provincias</span><br/>
-        Las provincias que componen la República Dominicana con sus respectivos codigos y descripciones.<br>
-        <span class="text-muted"><small>Ultima actualización: xx-xx-xxxx<small></span>
+      <td><span class="service"><%=servicio.nombre%></span><br/>
+        <%=servicio.descripcion%><br>
+        <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at%><small></span>
       </td>
-      <td class="center_btn"><a href="/api/v1/provincias.json" target="_blank" class="btn btn-primary">JSON</a></td>
-      <td class="center_btn"><a href="/api/v1/provincias.xml" target="_blank" class="btn btn-primary">XML</a></td>
-      <td class="center_btn"><a href="/api/v1/provincias.csv" target="_blank" class="btn btn-primary">CSV</a></td>
-      <td class="center_btn"><a href="/api/v1/provincias.xls" target="_blank" class="btn btn-primary">XLS</a></td>
+      <td class="center_btn"><a href="/api/<%=servicio.url%>.json" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>JSON</a></td>
+      <td class="center_btn"><a href="/api/<%=servicio.url%>.xml" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>XML</a></td>
+      <td class="center_btn"><a href="/api/<%=servicio.url%>.csv" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>CSV</a></td>
+      <td class="center_btn"><a href="/api/<%=servicio.url%>.xls" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>XLS</a></td>
     </tr>
-    <tr>
-      <td><span class="service">Municipios</span><br/>
-        Una conjunto de todos los municipios de la República Dominicana, relacionados con la provincia.<br>
-        <span class="text-muted"><small>Ultima actualización: xx-xx-xxxx<small></span>
-      </td>
-      <td class="center_btn"><a href="#" target="_blank" disabled="disabled" class="btn btn-primary">JSON</a></td>
-      <td class="center_btn"><a href="#" target="_blank" disabled="disabled" class="btn btn-primary">XML</a></td>
-      <td class="center_btn"><a href="#" target="_blank" disabled="disabled" class="btn btn-primary">CSV</a></td>
-      <td class="center_btn"><a href="#" target="_blank" disabled="disabled" class="btn btn-primary">XLS</a></td>
-    </tr>
+    <%end%>
   </tbody>
   </table>
 </div>
