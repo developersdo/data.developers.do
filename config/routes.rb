@@ -1,5 +1,7 @@
 DataDevelopersDo::Application.routes.draw do
 
+	resources :servicio
+
   root :to => "main#index"
 
   namespace :api do

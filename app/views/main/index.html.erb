@@ -24,10 +24,11 @@
         <%=servicio.descripcion%><br>
         <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at%><small></span>
       </td>
-      <td class="center_btn"><a href="/api/<%=servicio.url%>.json" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>JSON</a></td>
-      <td class="center_btn"><a href="/api/<%=servicio.url%>.xml" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>XML</a></td>
-      <td class="center_btn"><a href="/api/<%=servicio.url%>.csv" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>CSV</a></td>
-      <td class="center_btn"><a href="/api/<%=servicio.url%>.xls" target="_blank" class="btn btn-primary" <%=servicio.btn_disabled%>>XLS</a></td>
+      <td class="center_btn">
+        
+        <%= link_to 'Detalle', servicio_path(servicio), :class => "btn btn-primary btn-block" %>
+      </td>
+      
     </tr>
     <%end%>
   </tbody>

@@ -1,0 +1,59 @@
+<h2><%=@servicio.nombre%></h2>
+<hr>
+<span class="text-muted"><%=@servicio.updated_at%></span>
+<br>
+<br>
+<%=@servicio.descripcion%>........
+<br>
+<br>
+<table class="table table-striped">
+
+	<tr>
+		<th>Descripción</th>
+		<th>Verbo</th>
+		<th>Url</th>
+		<th>Formatos</th>
+	</tr>
+	<tr>
+		<td>Listado completo de todas las provincias.</td>
+		<td><span class="label label-info">Get</span></td>
+		<td>
+			<span class="url">http://data.developers.do/api/<b><%=@servicio.url%></b>.json</span><br>
+		</td>
+		<td>
+			<div class="btn-group cambio">
+			  <button type="button" class="btn btn-xs btn-info">json</button>
+			  <button type="button" class="btn btn-xs btn-warning">xml</button>
+			  <button type="button" class="btn btn-xs btn-default">csv</button>
+			  <button type="button" class="btn btn-xs btn-success">xls</button>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>Detalle de una provincia especifica. Recibe como parametro el ID de la provincia.<br><br>
+			<span class="text-muted">Ejemplo:</span>
+			<code>
+				<pre>
+{
+id: 2,
+nombre: "Altagracia",
+created_at: "2013-07-29T14:24:40.579Z",
+updated_at: "2013-07-29T14:24:40.579Z"
+}
+				</pre>
+			</code>
+		</td>
+		<td><span class="label label-info">Get</span></td>
+		<td>
+			<span class="url">http://data.developers.do/api/<%=@servicio.url%>/<b>1</b>.json</span><br>
+		</td>
+		<td>
+			<div class="btn-group cambio">
+			  <button type="button" class="btn btn-xs btn-info">json</button>
+			  <button type="button" class="btn btn-xs btn-warning">xml</button>
+			  <button type="button" class="btn btn-xs btn-default">csv</button>
+			  <button type="button" class="btn btn-xs btn-success">xls</button>
+			</div>
+		</td>
+	</tr>
+</table>
