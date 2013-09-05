@@ -25,6 +25,17 @@ module Api
 				end
 			end
 
+			def municipios
+				@municipios = Provincia.find(params[:id]).municipios
+
+				respond_to do |format|
+					format.json {render json: @municipios.to_json()}
+					format.xml {render xml: @municipios.to_xml()}
+					format.csv {render text: @municipios.to_csv()}
+					format.xls {render text: @municipios.to_csv(col_sep: "\t")}
+				end
+			end
+
 		end
 	end
 end

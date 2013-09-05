@@ -1,5 +1,6 @@
 class Servicio < ActiveRecord::Base
 	attr_accessible :nombre, :descripcion, :publicado, :url
+	has_many :detalles
 
 	def btn_disabled
 

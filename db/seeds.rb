@@ -1,13 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-# Environment variables (ENV['...']) are set in the file config/application.yml.
-# See http://railsapps.github.io/rails-environment-variables.html
+# Servicios
 
+# Servicio - Provincia
+s = Servicio.create(nombre: "Provincias", descripcion: "Las provincias que componen la República Dominicana con sus respectivos codigos y descripciones", publicado: true, url: "")
+Detalle.create(descripcion: "Listado completo de todas las provincias.", verbo:"Get", url: "v1/provincias", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
+Detalle.create(descripcion: "Detalle de una provincia especifica. Recibe como parametro el ID de la provincia.<br><br>
+			<span class='text-muted'>Ejemplo:</span>
+			<code>
+				<pre>
+{
+  id: 2,
+  nombre: 'Altagracia',
+  created_at: '2013-07-29T14:24:40.579Z',
+  updated_at: '2013-07-29T14:24:40.579Z'
+}
+				</pre>
+			</code>", verbo:"Get", url: "v1/provincias/1", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
+Detalle.create(descripcion: "Todos los municipios que pertenecen a una provincia.", verbo:"Get", url: "v1/provincias/1/municipios", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
+
+
+# Dataset de provincias
 provincias_list = [
 	[1, "Distrito Nacional" ],
 	[2,"Altagracia"],
@@ -45,4 +56,37 @@ provincias_list = [
 
 provincias_list.each do |id, name|
 	Provincia.create(id: id, nombre: name)
+end
+
+# Servicio - Municipios
+s = Servicio.create(nombre: "Municipios", descripcion: "Los municipios de la República Dominicana con la provincia a la cual pertenecen", publicado: true, url: "")
+Detalle.create(descripcion: "Listado completo de todas los municipios. Cada objeto incluye la provincia en los formato de XML y JSON.", verbo:"Get", url: "v1/municipios", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
+Detalle.create(descripcion: "Detalle de un municipio especifico. Recibe como parametro el ID del municipio.<br><br>
+			<span class='text-muted'>Ejemplo:</span>
+			<code>
+				<pre>
+{
+	id: 1,
+	nombre: 'Prueba',
+	provincia_id: 1,
+	created_at: '2013-09-05T04:27:23.542Z',
+	updated_at: '2013-09-05T04:27:23.542Z',
+  -	provincia: {
+		id: 1,
+		nombre: 'Distrito Nacional',
+		created_at: '2013-09-05T04:27:23.334Z',
+		updated_at: '2013-09-05T04:27:23.334Z'
+	}
+}
+				</pre>
+			</code>", verbo:"Get", url: "v1/municipios/1", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
+
+
+municipios_list = [
+	[1, "Prueba", 1],
+	[2, "Prueba2", 1],
+]
+
+municipios_list.each do |id, name, provincia_id|
+	Municipio.create(id: id, nombre: name, provincia_id: provincia_id)
 end

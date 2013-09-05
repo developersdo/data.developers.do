@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descripcion: MyText
+  verbo: MyString
+  url: MyString
+  formato_json: false
+  formato_xml: false
+  formato_csv: false
+  formato_xls: false
+  servicio_id: 
+
+two:
+  descripcion: MyText
+  verbo: MyString
+  url: MyString
+  formato_json: false
+  formato_xml: false
+  formato_csv: false
+  formato_xls: false
+  servicio_id: 
