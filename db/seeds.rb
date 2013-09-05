@@ -17,8 +17,6 @@ Detalle.create(descripcion: "Detalle de una provincia especifica. Recibe como pa
 			</code>", verbo:"Get", url: "v1/provincias/1", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
 Detalle.create(descripcion: "Todos los municipios que pertenecen a una provincia.", verbo:"Get", url: "v1/provincias/1/municipios", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
 
-
-# Dataset de provincias
 provincias_list = [
 	[1, "Distrito Nacional" ],
 	[2,"Altagracia"],
@@ -59,6 +57,7 @@ provincias_list.each do |id, name|
 end
 
 # Servicio - Municipios
+
 s = Servicio.create(nombre: "Municipios", descripcion: "Los municipios de la República Dominicana con la provincia a la cual pertenecen", publicado: true, url: "")
 Detalle.create(descripcion: "Listado completo de todas los municipios. Cada objeto incluye la provincia en los formato de XML y JSON.", verbo:"Get", url: "v1/municipios", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
 Detalle.create(descripcion: "Detalle de un municipio especifico. Recibe como parametro el ID del municipio.<br><br>
@@ -90,3 +89,18 @@ municipios_list = [
 municipios_list.each do |id, name, provincia_id|
 	Municipio.create(id: id, nombre: name, provincia_id: provincia_id)
 end
+
+# Servicio - Sectores
+s = Servicio.create(nombre: "Sectores", descripcion: "Los sectores de la República Dominicana con la provincia y el municipio al cual pertenecen", publicado: false, url: "")
+
+# Servicio - Codigo postales
+s = Servicio.create(nombre: "Codigos postales", descripcion: "Los codigos postales de la República Dominicana segun el INPOSDOM", publicado: false, url: "")
+
+# Servicio - Empresas
+s = Servicio.create(nombre: "Empresas", descripcion: "Listado de empresas registradas en la DGII", publicado: false, url: "")
+
+# Servicio - Combustibles
+s = Servicio.create(nombre: "Precios de los combustibles", descripcion: "Historico de precios de los combustibles segun el Ministerio de Industria y Comercio", publicado: false, url: "")
+
+# Servicio - Tasa del dollar
+s = Servicio.create(nombre: "Tasa del dollar", descripcion: "Tasa del oficial según el Banco Central", publicado: false, url: "")

@@ -14,7 +14,7 @@
 <br>
 <div class="panel">
   <div class="panel-heading">
-    <h3 class="panel-title">Servicios disponibles (alpha)</h3>
+    <h3 class="panel-title">Servicios (alpha)</h3>
   </div>
   <table class="table table-striped">
   <tbody>
@@ -22,11 +22,10 @@
     <tr>
       <td><span class="service"><%=servicio.nombre%></span><br/>
         <%=servicio.descripcion%><br>
-        <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at%><small></span>
+        <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at.strftime("%d-%b-%Y")%></small></span>
       </td>
       <td class="center_btn">
-        
-        <%= link_to 'Detalle', servicio_path(servicio), :class => "btn btn-primary btn-block" %>
+        <a href="<%=servicio_path(servicio)%>" <%=servicio.btn_disabled%> class="btn btn-primary btn-block">Detalle</a>
       </td>
       
     </tr>

@@ -3,7 +3,6 @@ class Servicio < ActiveRecord::Base
 	has_many :detalles
 
 	def btn_disabled
-
 		if self.publicado == false
 			return "disabled = \"disabled\""
 		end

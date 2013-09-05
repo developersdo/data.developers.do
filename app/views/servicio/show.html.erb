@@ -1,6 +1,10 @@
+<br>
+<br>
+<br>
+<br>
 <h2><%=@servicio.nombre%></h2>
 <hr>
-<span class="text-muted"><%=@servicio.updated_at%></span>
+<span class="text-muted"><small>Ultima actualización: <%=@servicio.updated_at.strftime("%d-%b-%Y")%></small></span>
 <br>
 <br>
 <%=@servicio.descripcion%>........
