@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20130905041219) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "detalles", force: true do |t|
     t.text     "descripcion"
     t.string   "verbo"
