@@ -16,6 +16,8 @@ DataDevelopersDo::Application.routes.draw do
 			
 			match "/feriados/:id" => "feriados#index", via: [:get]
 
+			match "/empresas/:id" => "empresas#index", via: [:get]
+
 		end
 	end
 

@@ -24,7 +24,7 @@
         <%=servicio.descripcion%><br>
         <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at.strftime("%d-%b-%Y")%></small></span>
       </td>
-      <td class="center_btn">
+      <td class="center_btn" style="width: 160px;">
         <a href="<%=servicio_path(servicio)%>" <%=servicio.btn_disabled%> class="btn btn-primary btn-block">Detalle</a>
       </td>
       
