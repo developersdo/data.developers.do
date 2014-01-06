@@ -43,7 +43,7 @@ provincias_list = [
 	[22,"Hermanas Mirabal"],
 	[23,"Samana"],
 	[24,"San Cristobal"],
-	[25,"San Juan de la Maguana"],
+	[25,"San Juan"],
 	[26,"San Pedro de Macoris"],
 	[27,"Sanchez Ramirez"],
 	[28,"Santiago de los Caballeros"],

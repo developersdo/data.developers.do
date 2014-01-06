@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fecha_original: 2014-01-06
+  fecha_movido: 2014-01-06
+
+two:
+  fecha_original: 2014-01-06
+  fecha_movido: 2014-01-06

@@ -20,4 +20,6 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'detalle', 'detalles'
   inflect.irregular 'provincia', 'provincias'
   inflect.irregular 'municipio', 'municipios'
+  inflect.irregular 'ciudad', 'ciudades'
+  inflect.irregular 'sector', 'sectores'
 end

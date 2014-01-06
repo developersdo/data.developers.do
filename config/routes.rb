@@ -7,9 +7,15 @@ DataDevelopersDo::Application.routes.draw do
 	namespace :api do
 		namespace :v1 do
 			resources :provincias
-			resources :municipios
 
+			resources :municipios
 			match "/provincias/:id/municipios" => "provincias#municipios", via: [:get]
+			
+			resources :ciudades
+			resources :sectores
+			
+			match "/feriados/:id" => "feriados#index", via: [:get]
+
 		end
 	end
 

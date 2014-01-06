@@ -25,12 +25,7 @@ Las personas que hasta el momento han contribuido al proyecto son:
 * @popxix - contribuyente
 
 ###¿Cómo puedo ayudar?
-En esta primera etapa solo estamos recibiendo aportes monetarios para ser usados en:
-* Pago del Hosting
-* Pizza, redbull
-* Otros gastos misceláneos
-
-Para realizar su aporte pude comunicarse via twitter con @DevelopersDO o directamente con uno de los organizadores.
+Estamos entrando en beta, pronto tendremos mas info sobre como puede ayudar
 
 ###En una segunda etapa estaremos ampliando y podrán contribuir:
 * Nuevos API
@@ -42,4 +37,4 @@ Para realizar su aporte pude comunicarse via twitter con @DevelopersDO o directa
 Sencillo, esto es un esfuerzo conjunto de todos, aquí nadie esta haciendo esto para ganar dinero, mientras más personas aporten más lejos podemos llegar.
 
 ###¿Cuándo estará lista la primera etapa?
-Pronto...
+Ya tenemos algunos repositorios de prueba, estamos agregando mas.....

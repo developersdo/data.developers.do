@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130905041219) do
+ActiveRecord::Schema.define(version: 20140106153104) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "ciudades", force: true do |t|
+    t.string   "nombre"
+    t.integer  "municipio_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "detalles", force: true do |t|
     t.text     "descripcion"
@@ -27,6 +37,14 @@ ActiveRecord::Schema.define(version: 20130905041219) do
   end
 
   add_index "detalles", ["servicio_id"], name: "index_detalles_on_servicio_id", using: :btree
+
+  create_table "feriados", force: true do |t|
+    t.date     "fecha_original"
+    t.date     "fecha_movido"
+    t.string   "motivo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "municipios", force: true do |t|
     t.string   "nombre"
