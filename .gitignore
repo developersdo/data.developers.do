@@ -10,6 +10,8 @@
 # http://github.com/RailsApps/rails-composer/issues
 #----------------------------------------------------------------------------
 
+#mine /db/seeds/.TXT
+
 # bundler state
 /.bundle
 /vendor/bundle/

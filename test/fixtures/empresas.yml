@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rnc: 1
+  nombre: MyString
+
+two:
+  rnc: 1
+  nombre: MyString

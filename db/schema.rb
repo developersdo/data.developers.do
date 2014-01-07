@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20140106171111) do
   add_index "detalles", ["servicio_id"], name: "index_detalles_on_servicio_id", using: :btree
 
   create_table "empresas", force: true do |t|
-    t.string  "rnc"
+    t.string   "rnc"
     t.string   "nombre"
     t.datetime "created_at"
     t.datetime "updated_at"
