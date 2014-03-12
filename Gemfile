@@ -23,3 +23,5 @@ group :development do
   gem 'quiet_assets'
   gem 'debugger'
 end
+
+gem 'net-ssh', '2.7.0'

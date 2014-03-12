@@ -72,6 +72,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.5)
     multi_json (1.7.7)
+    net-ssh (2.7.0)
     newrelic_rpm (3.7.3.204)
     pg (0.17.1)
     polyglot (0.3.3)
@@ -147,6 +148,7 @@ DEPENDENCIES
   figaro
   jbuilder (~> 1.2)
   jquery-rails
+  net-ssh (= 2.7.0)
   newrelic_rpm
   pg
   protected_attributes
