@@ -20,12 +20,12 @@ File.open(File.dirname(__FILE__) +  "/DGII_RNC.TXT",  "r:windows-1251:utf-8") do
 	      nombre = linea[1]
 
 	      Empresa.create(rnc: rnc, nombre: nombre)
+	      
+	      if (i % 1000 == 0)
+	      	print "Van #{i}\n"
+	      end
 
-	      if Rails.env.development?
-		      if (i % 1000 == 0)
-		      	print "Van #{i}\n"
-		      end
-
+		  if Rails.env.development?
 		      break if i == 5000
 		  end
 

@@ -11,6 +11,8 @@
 #----------------------------------------------------------------------------
 
 #mine /db/seeds/.TXT
+/config/newrelic.yml
+
 
 # bundler state
 /.bundle
