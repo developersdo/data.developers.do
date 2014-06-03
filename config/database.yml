@@ -2,8 +2,6 @@ development:
   adapter: postgresql
   encoding: unicode
   database: data_developers_do_development
-  username: "data_developers_do_user"
-  password: "data_developers_do_pass"
   host: localhost
   port: 5432
 
