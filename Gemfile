@@ -14,7 +14,7 @@ end
 #gem 'bootstrap-sass'
 gem 'figaro'
 gem 'pg'
-gem 'protected_attributes'
+gem 'protected_attributes', '~> 1.0.5'
 gem 'simple_form', '~> 3.0.1'
 gem 'thin'
 group :development do
