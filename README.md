@@ -1,6 +1,28 @@
 #data.developers.do
 
 
+
+
+### Como usarlo
+  * git clone 
+  * Crear base de datos en Postgresql
+  * Cambia las credenciales y nombre de la base de datos de acuerdo a tu preferencia
+  * rake db:migrate
+  * rake db:seed
+
+
+
+### TODO
+ * Poner como gem
+ * Documentar los task
+ * vincular con codigos mundiales...?
+ 
+
+ 
+
+
+
+
 ###¿Qué estamos haciendo?
 Estamos creando un repositorio centralizado desde donde se pueden acceder a los datos comunes que los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.
 
