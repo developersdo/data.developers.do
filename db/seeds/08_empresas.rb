@@ -4,35 +4,5 @@ s = Servicio.create(nombre: "Empresas", descripcion: "Listado de empresas regist
 # Metodos
 Detalle.create(descripcion: "Consulta por RNC", verbo:"Get", url: "v1/empresas/401506254", formato_json: true, formato_xml: true, formato_csv: true, formato_xls: true, servicio_id: s.id)
 
-#Data
-File.open(File.dirname(__FILE__) +  "/DGII_RNC.TXT",  "r:windows-1251:utf-8") do |file|
-
-	i = 0
-
-    file.each do |line|
-
-    	i = i + 1
-
-    	begin
-	      linea = line.split("|")
-
-	      rnc = linea[0]
-	      nombre = linea[1]
-
-	      Empresa.create(rnc: rnc, nombre: nombre)
-	      
-	      if (i % 1000 == 0)
-	      	print "Van #{i}\n"
-	      end
-
-		  if Rails.env.development?
-		      break if i == 5000
-		  end
-
-    	rescue Exception => e
-    		print e
-    		print line
-    	end
-
-    end
-end
+# RNC UPDATE #
+Rake::Task['db:seed_live:update'].invoke
