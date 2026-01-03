@@ -1,9 +1,6 @@
 <% content_for :description do %>Estamos creando un repositorio centralizado desde donde se pueden acceder a los datos comunes que
-    los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.<% end %>
-<br>
-<br>
-<br>
-<br>
+     los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.<% end %>
+
 <br>
 <br>
 <br>
@@ -11,103 +8,92 @@
 <span class="main_title">developers.do</span>
 <br>
 <br>
-<br>
 <div class="panel">
-  <div class="panel-heading">
-    <h3 class="panel-title">Servicios (beta)</h3>
-  </div>
-  <table class="table table-striped">
-  <tbody>
-    <%@servicios.each do |servicio| %>
-    <tr>
-      <td><span class="service"><%=servicio.nombre%></span><br/>
-        <%=servicio.descripcion%><br>
-        <span class="text-muted"><small>Ultima actualización: <%=servicio.updated_at.strftime("%d-%b-%Y")%></small></span>
-      </td>
-      <td class="center_btn" style="width: 160px;">
-        <a href="<%=servicio_path(servicio)%>" <%=servicio.btn_disabled%> class="btn btn-primary btn-block">Detalle</a>
-      </td>
-      
-    </tr>
-    <%end%>
-  </tbody>
-  </table>
+   <div class="panel-heading">
+     <h3 class="panel-title">API Reference (beta)</h3>
+   </div>
+   <table class="table table-striped">
+     <thead>
+       <tr>
+         <th>Endpoint</th>
+         <th>Format</th>
+         <th>Example</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Provinces</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/provincias</code></td>
+       </tr>
+       <tr>
+         <td>Provinces & Municipalities</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/provincias/:id/municipios</code></td>
+       </tr>
+       <tr>
+         <td>Municipalities</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/municipios</code></td>
+       </tr>
+       <tr>
+         <td>Cities</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/ciudades</code></td>
+       </tr>
+       <tr>
+         <td>Holidays</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/feriados/:year</code></td>
+       </tr>
+       <tr>
+         <td>Companies (RNC)</td>
+         <td>JSON, XML, CSV, XLS</td>
+         <td><code>/api/v1/empresas/:rnc</code></td>
+       </tr>
+     </tbody>
+   </table>
 </div>
 
 <br>
-<span class="faq_q">&iquest;Qué estamos haciendo?</span><br>
+
+<span class="faq_q">¿Qué estamos haciendo?</span><br>
 <span class="text-muted">Estamos creando un repositorio centralizado desde donde se pueden acceder a los datos comunes que
-    los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.</span>
+     los developers necesitamos cuando estamos desarrollando nuestras aplicaciones.</span>
 <br>
 <br>
-<span class="faq_q">&iquest;Qué tipo de data <strong>NO</strong> tendrán?</span><br>
+<span class="faq_q">¿Qué tipo de data <strong>NO</strong> tendrán?</span><br>
 <span class="text-muted">No manejaremos data de caracter confidencial.</span>
-<br><br>
-<span class="faq_q">&iquest;Como puedo ayudar?</span><br>
+<br>
+<br>
+<span class="faq_q">¿Cómo puedo ayudar?</span><br>
 <span class="text-muted">Estamos entrando en beta, pronto tendremos mas info sobre como puede ayudar</span>
 <br>
 <br>
-<span class="faq_q">&iquest;Por qué debo ayudar?</span><br>
+<span class="faq_q">¿Por qué debo ayudar?</span><br>
 <span class="text-muted">Sencillo, esto es un esfuerzo conjunto de todos, aqui nadie esta haciendo esto para ganar dinero, mientras mas personas aporten mas lejos podemos llegar.</span>
-<br><br>
-<span class="faq_q">&iquest;Quiénes somos?</span><br>
+<br>
+<br>
+<span class="faq_q">¿Quiénes somos?</span><br>
 <span class="text-muted">Las personas que hasta el momento han contribuido al proyecto son:</span>
 <ul class="text-muted">
-  <li><a target="_blank" href="https://twitter.com/HectorMinaya">@HectorMinaya</a> - organizador/contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/amhedH">@amhedH</a> - organizador/contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/rene_olivo">@rene_olivo</a> - organizador/contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/JGTaveras">@JGTaveras</a> - contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/jhonatasrod">@jhonatasrod</a> - contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/scairon">@scairon</a> - contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/ClaudioASanchez">@ClaudioASanchez</a> - contribuyente</li>
-  <li><a target="_blank" href="https://twitter.com/popxix">@popxix</a> - contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/HectorMinaya">@HectorMinaya</a> - organizador/contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/amhedH">@amhedH</a> - organizador/contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/rene_olivo">@rene_olivo</a> - organizador/contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/JGTaveras">@JGTaveras</a> - contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/jhonatasrod">@jhonatasrod</a> - contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/scairon">@scairon</a> - contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/ClaudioASanchez">@ClaudioASanchez</a> - contribuyente</li>
+   <li><a target="_blank" href="https://twitter.com/popxix">@popxix</a> - contribuyente</li>
 </ul>
 <br>
-<span class="faq_q">&iquest;Sera un proyecto OpenSource?</span><br>
+<br>
+<span class="faq_q">¿Es un proyecto OpenSource?</span><br>
 <span class="text-muted">Si, desde el inicio. El repositorio esta en <a target="_blank" href="https://github.com/developersdo/data.developers.do">https://github.com/developersdo/data.developers.do</a>,
-  pero no estaremos aceptando pull requests hasta la segunda fase del proyecto.</span>
-<br><br>
-<span class="faq_q">&iquest;Cuándo estará lista la primera etapa?</span><br>
+   pero no estaremos aceptando pull requests hasta la segunda fase del proyecto.</span>
+<br>
+<br>
+<span class="faq_q">¿Cuándo estará lista la primera etapa?</span><br>
 <span class="text-muted">Ya tenemos algunos repositorios de prueba, estamos agregando mas.....</span>
-<br><br>
-
-<div id="example5">
-  <div id="shareme" data-url="http://data.developers.do/" data-text="Apoya este proeycto"></div>
-</div>
-<script>
-    $('#shareme').sharrre({
-        share: {
-            googlePlus: true,
-            facebook: true,
-            twitter: true,
-            digg: false,
-            delicious: false,
-            stumbleupon: false,
-            linkedin: true,
-            pinterest: false
-        },
-        buttons: {
-            googlePlus: {size: 'tall', annotation:'bubble'},
-            facebook: {layout: 'box_count'},
-            twitter: {count: 'vertical'},
-            digg: {type: 'DiggMedium'},
-            delicious: {size: 'tall'},
-            stumbleupon: {layout: '5'},
-            linkedin: {counter: 'top'},
-            pinterest: {media: 'http://sharrre.com/img/example1.png', description: $('#shareme').data('text'), layout: 'vertical'}
-        },
-        enableHover: false,
-        enableCounter: false,
-        enableTracking: true
-    });
-</script>
-<style type="text/css">
-    #example5{
-        float:left;
-        margin:68px 25% 0 25%;
-    }
-    .sharrre .button{
-        float:left;
-        width:60px;
-    }
-</style>
+<br>
+<br>

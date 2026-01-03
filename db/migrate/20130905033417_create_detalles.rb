@@ -1,4 +1,4 @@
-class CreateDetalles < ActiveRecord::Migration
+class CreateDetalles < ActiveRecord::Migration[7.1]
   def change
     create_table :detalles do |t|
       t.text :descripcion

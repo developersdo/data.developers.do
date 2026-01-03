@@ -1,24 +1,20 @@
-DataDevelopersDo::Application.routes.draw do
+Rails.application.routes.draw do
+  resources :servicio, only: [:show]
 
-	resources :servicio
+  root 'main#index'
 
-	root :to => "main#index"
+  namespace :api do
+    namespace :v1 do
+      resources :provincias do
+        get 'municipios', on: :member
+      end
 
-	namespace :api do
-		namespace :v1 do
-			resources :provincias
+      resources :municipios
+      resources :ciudades
+      resources :sectores
 
-			resources :municipios
-			match "/provincias/:id/municipios" => "provincias#municipios", via: [:get]
-			
-			resources :ciudades
-			resources :sectores
-			
-			match "/feriados/:id" => "feriados#index", via: [:get]
-
-			match "/empresas/:id" => "empresas#index", via: [:get]
-
-		end
-	end
-
+      get '/feriados/:id' => 'feriados#index'
+      get '/empresas/:id' => 'empresas#index'
+    end
+  end
 end

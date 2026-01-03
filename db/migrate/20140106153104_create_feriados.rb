@@ -1,4 +1,4 @@
-class CreateFeriados < ActiveRecord::Migration
+class CreateFeriados < ActiveRecord::Migration[7.1]
   def change
     create_table :feriados do |t|
       t.date :fecha_original

@@ -1,30 +1,31 @@
-require File.expand_path('../boot', __FILE__)
+require_relative 'boot'
 
-require 'csv'
 require 'rails/all'
 
-# Require the gems listed in Gemfile, including any gems
+# Require gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env)
+Bundler.require(*Rails.groups)
+
+# Require CSV for to_csv methods
+require 'csv'
 
 module DataDevelopersDo
   class Application < Rails::Application
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 7.1
 
-    config.generators do |g|
-      
-      
-    end
+    # Configuration for the application, engines, and railties goes here.
+    #
+    # These settings can be overridden in specific environments using the files
+    # in config/environments/, which are processed later.
+    #
+    # config.time_zone = "Central Time (US & Canada)"
+    # config.eager_load_paths << Rails.root.join("extras")
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    # Don't generate system test files.
+    config.generators.system_tests = nil
 
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
-
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    # Configure manifest location for sprockets
+    config.assets.manifest = Rails.root.join('app/assets/config/manifest.js')
   end
 end

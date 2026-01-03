@@ -1,12 +1,9 @@
 class Servicio < ActiveRecord::Base
-	attr_accessible :nombre, :descripcion, :publicado, :url
-	has_many :detalles
+  has_many :detalles
 
-	def btn_disabled
-		if self.publicado == false
-			return "disabled = \"disabled\""
-		end
+  def btn_disabled
+    return unless publicado == false
 
-	end
-
+    'disabled = "disabled"'
+  end
 end
